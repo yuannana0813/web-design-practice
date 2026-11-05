@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>校园商品展示 & 订购</h1>
+    <ul>
+        <li><a href="#products">商品</a></li>
+        <li><a href="#features">特点</a></li>
+        <li><a href="#order">下单</a></li>
+        <li><a href="#contact">联系方式</a></li>
+    </ul>
+    <ol>
+        <li>页面说明</li>
+        <li>表格用于展示商品信息（价格、库存、描述）</li>
+        <li>表单用于提交购买请求（姓名、选择商品、数量、备注）</li>
+        <li>使用简单的边框和背景色以清晰区分表格行与表头</li>
+    </ol>
+    <h2>热销商品列表</h2>
+    <table class="product-table">
+        <div style="text-align:left; font-weight:bold; margin-bottom:0px;">
+            校园精选（示例表格）
+        </div>
+        <thead>
+            <th>商品编号</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>价格</th>
+            <th>库存</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>G001</td>
+                <td>校园保温杯</td>
+                <td>500ml，不锈钢，便携盖</td>
+                <td>59.0</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>G002</td>
+                <td>记事本套装</td>
+                <td>含A5笔记本与书签</td>
+                <td>29.9</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>G003</td>
+                <td>静音USB接收器</td>
+                <td>无线鼠标标配</td>
+                <td>45</td>
+                <td>75</td>
+            </tr>
+                <td>G004</td>
+                <td>学习礼包</td>
+                <td colspan="3">包含笔、笔记本、便签等，限时套装优惠。</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="small-note">注：表格使用斑马背景、表头着色和边框来提高可读性。</p>
+    <h2>提交订单</h2>
+    <form class="form-box" action="#" method="post">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" placeholder="请输入真实姓名" required>
+        <label for="product">选择商品：</label>
+        <select id="product" name="product" required>
+            <option value="">请选择</option>
+            <option value="0001">G001</option>
+        </select>
+        <label for="qty">数量：</label>
+        <input type="text" id="qty" name="qty" value="1" pattern="\d+" title="请输入正整数" required>
+        <div style="margin-top:10px;">
+            <span style="font-weight:normal;">交付方式：</span>
+            <label class="inline"><input type="radio" name="delivery" value="mail" checked> 邮寄</label>
+            <label class="inline"><input type="radio" name="delivery" value="pickup"> 到校自取</label>
+        </div>
+        <div style="margin-top:8px;">
+            <label><input type="checkbox" name="invoice" value="yes">需要发票</label>
+        </div>
+        <label for="note">备注：</label>
+        <textarea id="note" name="note" rows="4" placeholder="上课时间可安排自取 / 发票抬头..."></textarea>
+        <div style="margin-top:12px;">
+            <button type="submit">提交订单</button>
+            <button type="reset" style="margin-left:8px;">重置</button>
+        </div>
+    </form>
+    <h2>联系我们</h2>
+    <ul>
+        <li>电话：010-12345678</li>
+        <li>邮箱：kampus-shop@example.edu.cn</li>
+        <li>地址：某某大学 校园创业园区</li>
+    </ul>
+    <div class="footer">校园商店</div>
+</body>
+</html>

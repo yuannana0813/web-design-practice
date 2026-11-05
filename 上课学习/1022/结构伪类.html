@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .book {
+            width: 720px;
+            height: 800px;
+            }
+        p {
+            font-size: 30px;
+            font-family: '华文隶书', STLiti, serif;
+            font-weight: 700;
+        }
+        p:first-child {
+            color: rgb(255, 119, 0);
+        }
+        /* 选择所有p元素中的第2个p元素： */
+        p:nth-of-type(2) {
+            color: rgb(255, 0, 251) ;
+        }
+        /* 选择所有兄弟元素中的第3个元素： */
+        :nth-child(5) {
+            color: gold;
+        }
+        :nth-last-child(4) {
+            color: rgba(0, 94, 255, 0.525);
+        }
+        /* 选择作为倒数第2个子元素的p元素： */
+        p:nth-last-child(2) {
+            color: #FF1496;
+        }
+        .author {
+            font-size: 16px;
+            text-align: right;
+            font-style: italic;
+            font-family: '宋体';
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="book" >
+    <p>“这是最好的时代，这是最坏的时代。”</p>
+    <div class="author">—查尔斯·狄更斯，《双城记》</div>
+    <p>“生存还是毁灭，这是一个值得考虑的问题。”</p>
+    <div class="author">—威廉·莎士比亚，《哈姆雷特》</div>
+    <p>“不要为已消逝之年华叹息，须正视匆匆来临的时光。”</p>
+    <div class="author">—简·奥斯汀，《劝导》</div>
+    <p>“记住，你要么找借口，要么找方法。”</p>
+    <div class="author">—吉姆·罗恩，《成功人士的七个习惯》</div>
+    <p>“世界上只有一种真正的英雄主义，<br>那就是在认识生活的真相后依然热爱生活。”</p>
+    <div class="author">—罗曼·罗兰，《米开朗基罗传》</div>
+    </div>
+</body>
+</html>

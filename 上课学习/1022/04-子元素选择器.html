@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>复合选择器之子元素选择器</title>
+    <style>
+        /* 使用 > 符号时，只会选中直接子元素，而不会选中更深层次的嵌套元素。 */
+        .nav a{
+            color:pink;
+        }
+        .nav>a {
+            color: red;
+        }
+        .demo~a {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="demo">hahhaha</div>
+        <a href="#">我是儿子</a>
+        <a href="#">我是二儿子</a>
+        <p>
+            <a href="#">我是孙子</a>
+        </p>
+    </div>
+</body>
+
+</html>
